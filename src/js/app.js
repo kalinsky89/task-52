@@ -7,4 +7,14 @@ window.addEventListener("DOMContentLoaded", () => {
   button.addEventListener("click", () => {
     alert("💣");
   });
+  const body = document.querySelector("body");
+  body.addEventListener("click", () => {
+    var body=document.querySelector('body');
+        for (var i=1; i<6;i++){
+          var article = document.createElement("article")
+          article.textContent = "message " + i;
+          article.setAttribute("class", "message");
+          body.appendChild(article);
+        }
+  });
 });
